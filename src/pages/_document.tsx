@@ -1,3 +1,5 @@
+import Footer from '@/components/Footer'
+import Navbar from '@/components/navbar'
 import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
@@ -5,9 +7,12 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body>
-        <Main />
-        <NextScript />
+        <Navbar>
+          <Main />
+          <NextScript />
+        </Navbar>
       </body>
+      <Footer />
     </Html>
   )
 }
